@@ -1,20 +1,18 @@
+import { Navbar } from 'react-bootstrap';
 import './App.css';
+import 'materialize-css/dist/css/materialize.min.css';
+import NavBar from "./components/NavBar.js";
+import Header from "./components/Header.js";
+import About from "./components/About.js";
 
 function App() {
   return (
     <div className="App">
+      <Navbar />
+        <Header />
       <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+
+    <About />
       </header>
     </div>
   );
